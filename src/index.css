@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.crypto-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.crypto-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px);
+}
+
+.crypto-card img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.crypto-card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.crypto-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
